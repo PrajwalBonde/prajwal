@@ -1,0 +1,38 @@
+
+   <html lang="en">
+   <head>
+   <meta charset="utf-8">
+   <meta name="veiwport" content="width=device-width,initial-scale=1.0">
+   <title> Login in form Design</title>
+   <link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body style="background-image : url('photo_1.jpeg') ;">
+	<a href="http://www.unsplash.com"> </a>
+	<div class="Login-box" >
+	<img src="icon.png " class="avatar">
+<form>
+<h1> Login Here</h1>
+     <p>Username</p>
+    <input type="text"  name="" placeholder="Enter Username" id="username" /><br />
+	 <p>Password</p>
+    <input type="password"  name="" placeholder="password" id="password" /><br />
+    <input type="button"  value="Login"  onclick="javascript:validate()" />
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("username").value == "Admin"
+       && document.getElementById("password").value == "123" )
+    {
+       
+        location.href="index.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        
+    }
+}
+</script>
+</body>
+</html>
